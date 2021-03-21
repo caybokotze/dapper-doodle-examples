@@ -1,15 +1,16 @@
+using System.Collections.Generic;
 using DapperDoodle;
 using TestProject.Models;
 
 namespace TestProject.Queries
 {
-    public class SelectAPerson : Query<Person>
+    public class SelectAPerson : Query<List<Person>>
     {
         private readonly int _id;
 
-        public SelectAPerson(int Id)
+        public SelectAPerson(int id)
         {
-            _id = Id;
+            _id = id;
         }
         public override void Execute()
         {

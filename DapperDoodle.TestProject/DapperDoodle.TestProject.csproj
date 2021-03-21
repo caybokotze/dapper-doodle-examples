@@ -6,8 +6,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Dapper.Doodle" Version="1.0.0" />
+      <PackageReference Include="Dapper" Version="2.0.78" />
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="5.0.1" />
       <PackageReference Include="PeanutButter.RandomGenerators" Version="1.2.380" />
+      <PackageReference Include="PluralizeService.Core" Version="1.2.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -47,6 +49,12 @@
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="DapperDoodle, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\dapper-doodle\DapperDoodle\bin\Debug\netstandard2.1\DapperDoodle.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

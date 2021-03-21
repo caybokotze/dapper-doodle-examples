@@ -36,5 +36,11 @@ namespace TestProject.Controllers
             QueryExecutor.Execute(new TestBaseExecutor());
             return Content("All CRUD Operations Completed Successfully.");
         }
+
+        // [Route("all")]
+        // public ActionResult AllPeople()
+        // {
+        //     return Ok(QueryExecutor.Execute(new SelectAllPeople()));
+        // }
     }
 }

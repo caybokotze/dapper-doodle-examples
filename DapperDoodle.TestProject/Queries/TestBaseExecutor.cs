@@ -9,7 +9,7 @@ namespace TestProject.Queries
         {
             var connectionInstance = GetIDbConnection();
             //
-            var result = connectionInstance.QueryFirst("SELECT 1;");
+            var result = connectionInstance.QueryFirst<int>("SELECT 1;");
 
             Result = result;
         }
